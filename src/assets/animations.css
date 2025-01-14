@@ -1,0 +1,22 @@
+@keyframes rainbow {
+    0% {color: red;}
+    14% {color: orange;}
+    28% {color: yellow;}
+    42% {color: green;}
+    57% {color: blue;}
+    85% {color: indigo;}
+    100% {color: purple;}
+}
+@keyframes jump {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-8px);}
+    100% {transform: translateY(0);}
+}
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@keyframes wave {
+    0%, 100% {transform: translatey(-2px);}
+    50% {transform: translatey(2px);}
+}

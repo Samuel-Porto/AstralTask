@@ -1,0 +1,25 @@
+@import './reset.css';
+
+:root {
+    --background-page-color: #20262E;
+    --background-task-color: #282f38;
+    --color-font-primary: #E9E8E8;
+    --color-font-primary-hover: #ffffff80;
+    --color-font-secondary: #3d3a3a;
+    --color-theme: #CD5888;
+    --background-highlighted-dark: #181c22;
+    --background-highlighted-light: #373c43;
+    --background-app: #1d2229;
+    --color-error: #e76060;
+}
+.light-mode {
+    --background-page-color: #ebeaea;
+    --background-task-color: #F8FAFC;
+    --color-font-primary: #3a3a3a;
+    --color-font-primary-hover: #4b4b4b80;
+    --color-font-secondary: #E9E8E8;
+    --color-theme: #CD5888;
+    --background-highlighted-dark: #dfd5d5;
+    --background-highlighted-light: #b3bbbd;
+    --background-app: #F1F1F1;
+}

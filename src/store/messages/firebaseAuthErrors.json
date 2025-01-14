@@ -1,0 +1,18 @@
+{
+  "auth/invalid-email": "The email address is badly formatted.",
+  "auth/user-disabled": "The user account has been disabled by an administrator.",
+  "auth/user-not-found": "There is no user corresponding to the provided email.",
+  "auth/wrong-password": "The password is incorrect for the given email address.",
+  "auth/email-already-in-use": "The email address is already in use by another account.",
+  "auth/operation-not-allowed": "This operation is not allowed. Please contact support.",
+  "auth/weak-password": "The password must be at least 6 characters long.",
+  "auth/too-many-requests": "Too many requests. Please try again later.",
+  "auth/expired-action-code": "The verification code has expired. Please request a new one.",
+  "auth/invalid-action-code": "The action code is invalid. It may be malformed or expired.",
+  "auth/account-exists-with-different-credential": "An account already exists with the same email address but different sign-in credentials.",
+  "auth/invalid-credential": "The provided credential is invalid.",
+  "auth/requires-recent-login": "The operation requires recent login. Please reauthenticate and try again.",
+  "auth/captcha-check-failed": "The CAPTCHA check failed. Please try again.",
+  "auth/network-request-failed": "A network error occurred. Please try again.",
+  "auth/too-many-pending-requests": "Too many pending requests. Please try again later."
+}
