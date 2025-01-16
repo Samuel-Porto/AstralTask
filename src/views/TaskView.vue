@@ -38,11 +38,11 @@ watchEffect(() => {
 <template>
     <div class="tasks-container">
         <form class="create-task" @submit="e => handleCreateTask(e)">
-            <input type="text" name="task" placeholder="Create a task" autocomplete="off">
+            <input type="text" name="task" placeholder="Nome da tarefa" autocomplete="off">
             <button><v-icon name="bi-plus" scale="1.5" fill="var(--color-font-primary)" /></button>
         </form>
         <template v-if="!group.tasks.length">
-            <p class="empty-text">You can add a task to your group now!</p>
+            <p class="empty-text">Você pode adicionar uma tarefa agora!</p>
         </template>
         <ul v-else>
             <template v-for="task in group.tasks.filter(task => !task.fulfilled)">
@@ -104,5 +104,6 @@ watchEffect(() => {
     font-size: 28px;
     font-weight: 600;
     text-align: center;
+    margin: auto;
 }
 </style>

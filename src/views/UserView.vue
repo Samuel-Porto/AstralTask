@@ -39,7 +39,7 @@ onUnmounted(() => {darkModeUnsubscribe(); groupUnsubscribe();});
             </span>
             <span class="background-menu" @click="isMenuOpen = false" :class="{'open-menu': isMenuOpen}">
                 <aside @click="e => e.stopPropagation()">
-                    <button class="signout-button" @click="() => signOut(auth)">Sign out</button>
+                    <button class="signout-button" @click="() => signOut(auth)">Sair da conta</button>
                     <GroupList :groups="context.groups" />
                 </aside>
             </span>
@@ -48,7 +48,7 @@ onUnmounted(() => {darkModeUnsubscribe(); groupUnsubscribe();});
             <nav class="navigation">
                 <div class="top-navigation">
                     <SwitchButton :switchMode="changeDarkMode" :setMode="darkMode" />
-                    <button class="signout-button" @click="() => signOut(auth)">Sign out</button>
+                    <button class="signout-button" @click="() => signOut(auth)">Sair da conta</button>
                 </div>
                 <GroupList :groups="context.groups" />
             </nav>
@@ -145,7 +145,7 @@ onUnmounted(() => {darkModeUnsubscribe(); groupUnsubscribe();});
     color: var(--background-app);
     cursor: pointer;
     font-weight: 600;
-    padding: 4px;
+    padding: 2px 4px;
     transition: all .2s;
 }
 .signout-button:hover {

@@ -22,7 +22,7 @@ addIcons(BiTrash);
 <template>
     <div class="card-container">
         <p @click="handleGroupSelect(group.id)">{{ group.name }}</p>
-        <span @click="handleGroupDelete(group.id)"><v-icon name="bi-trash" scale="1.25" /></span>
+        <span @click="handleGroupDelete(group.id)"><v-icon name="bi-trash" scale="1.1" fill="var(--color-error)" /></span>
     </div>
 </template>
 <style scoped>
@@ -42,7 +42,7 @@ addIcons(BiTrash);
     padding: 8px;
 }
 .card-container > span {
-    padding: 4px;
+    padding: 6px;
 }
 .card-container > span > svg {
     transition: transform .2s;

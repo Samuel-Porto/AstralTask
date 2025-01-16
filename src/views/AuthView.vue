@@ -3,7 +3,7 @@ import { reactive, ref, watch } from 'vue';
 import { registerAccount, signInAccount } from '@/store/tools/auth.js';
 import authErrors from '@/store/messages/firebaseAuthErrors.json';
 
-const currentTab = ref('register');
+const currentTab = ref('login');
 
 const user = reactive({
     register: {
@@ -75,34 +75,34 @@ watch(currentTab, () => {
     <div class="auth-container">
         <div class="main-container">
             <form class="form-field" @submit="e => handleRegisterAccount(e)" :style="{display: currentTab === 'register'? 'inline-block': 'none'}">
-                <h3>Create your account</h3>
+                <h3>Crie sua conta</h3>
                 <label>
                     <p>Email:</p>
                     <input v-model="user.register.email" :class="{'field-error': errors.email}" type="email" name="email" @focusout="e => checkValidity(e.target)" pattern="\w+@\w+\.\w+" required>
                     <span class="error-field">{{ errors.email }}</span>
                 </label>
                 <label>
-                    <p>Password:</p>
+                    <p>Senha:</p>
                     <input v-model="user.register.password" :class="{'field-error': errors.password}" type="password" name="password" @focusout="e => checkValidity(e.target)" minlength="8" required>
                     <span class="error-field">{{ errors.password }}</span>
                 </label>
                 <span class="error-field">{{ errors.firebase }}</span>
-                <button type="submit">Register</button>
-                <span>Already have an account? Click <span @click="currentTab = 'login'">here</span></span>
+                <button type="submit">Criar conta</button>
+                <span>Já tem uma conta? Clique <span @click="currentTab = 'login'">aqui</span></span>
             </form>
             <form class="form-field" @submit="e => handleSignInAccount(e)" :style="{display: currentTab === 'login'? 'inline-block': 'none'}">
-                <h3>Login on your account</h3>
+                <h3>Entre na sua conta</h3>
                 <label>
                     <p>Email:</p>
                     <input v-model="user.login.email" type="email" name="email" required>
                 </label>
                 <label>
-                    <p>Password:</p>
+                    <p>Senha:</p>
                     <input v-model="user.login.password" type="password" name="password" required>
                 </label>
                 <span class="error-field">{{ errors.firebase }}</span>
-                <button type="submit">Login</button>
-                <span>Don't have an account? Click <span @click="currentTab = 'register'">here</span></span>
+                <button type="submit">Entrar</button>
+                <span>Não tem uma conta? Clique <span @click="currentTab = 'register'">aqui</span></span>
             </form>
         </div>
     </div>
@@ -169,7 +169,6 @@ watch(currentTab, () => {
     background: var(--color-theme);
     border-radius: 8px;
     border: 2px solid var(--color-theme);
-    border: none;
     color: var(--background-highlighted-light);
     cursor: pointer;
     font-size: 16px;

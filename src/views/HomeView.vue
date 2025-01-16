@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <p class="text">Create or select a group</p>
+    <p class="text">Crie ou selecione um grupo</p>
 </template>
 <style scoped>
 .text {

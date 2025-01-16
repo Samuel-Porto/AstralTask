@@ -24,7 +24,7 @@ function handleAddGroup(e) {
     <div class="group-list">
         <div class="group-list">
             <form @submit="e => handleAddGroup(e)">
-                <input type="text" name="name" placeholder="Create a group" autocomplete="off">
+                <input type="text" name="name" placeholder="Crie um grupo" autocomplete="off">
                 <button type="submit"><v-icon name="bi-plus" scale="1.75" fill="var(--color-font-primary)" /></button>
             </form>
             <ul>
